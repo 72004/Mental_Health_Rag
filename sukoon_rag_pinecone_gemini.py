@@ -252,7 +252,7 @@ def compose_prompt(user_text: str, retrieved_chunks: List[Dict]) -> str:
     context = "\n\n".join([f"- {c['text']}" for c in retrieved_chunks if c['text']])
     return f"""
 You are Sukoon AI — a calm, kind, big-brother style mental health companion. 
-Use the context below (do not invent facts). Respond empathetically, in short paragraphs (3–5), practical, and supportive.
+Use the context below (do not invent facts). Respond empathetically, in short paragraphs (3–5), practical, and supportive and also suggest some exercises or activities that the user can do to improve their mental health.
 If the user shows crisis signs, respond with empathy and encourage immediate help.
 
 Context:
@@ -287,7 +287,7 @@ def handle_user_input(user_input: str):
 # Quick test
 # -----------------------
 if __name__ == "__main__":
-    test_query = "I sometime feel like I am not good enough and I am not worth anything."
+    test_query = "I feeling sad and i want to die"
     print("User query:", test_query)
     print("---")
     print(handle_user_input(test_query))
