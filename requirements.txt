@@ -2,3 +2,4 @@ google-genai
 pinecone
 dotenv
 streamlit
+flask

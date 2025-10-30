@@ -1,0 +1,88 @@
+:root{
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --ink:#0f172a;
+  --muted:#6b7280;
+  --primary:#6366f1;
+  --assistant:#eef2ff;
+  --user:#dcfce7;
+  --border:#e5e7eb;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+}
+
+.container{max-width:1000px;margin:0 auto;padding:24px}
+
+.app-header{
+  background:var(--card);
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:10;
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{font-size:28px}
+.title h1{font-size:20px;margin:0}
+.title p{margin:0;color:var(--muted);font-size:13px}
+.link{color:var(--muted);text-decoration:none}
+.link:hover{color:var(--ink)}
+
+.hero{margin-top:16px}
+.hero-card{
+  background:linear-gradient(180deg,#ffffff, #fbfbff);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 8px 24px rgba(15,23,42,0.06);
+}
+.hero-card h2{margin:0 0 8px 0}
+.hero-card p{margin:0;color:var(--muted)}
+
+.chat{margin-top:20px}
+.chat-window{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:16px;
+  height:480px;
+  overflow:auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.message{display:flex;gap:10px;align-items:flex-start}
+.message .avatar{width:28px;line-height:28px;text-align:center}
+.message .bubble{
+  padding:12px 14px;border-radius:12px;line-height:1.5;max-width:80%;
+  border:1px solid var(--border);
+}
+.message.assistant .bubble{background:var(--assistant)}
+.message.user .bubble{background:var(--user);margin-left:auto}
+.message.user{justify-content:flex-end}
+
+.chat-input{
+  display:flex;gap:10px;margin-top:10px;
+}
+.chat-input input{
+  flex:1;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#fff;
+}
+.btn-primary{
+  background:var(--primary);color:#fff;border:none;border-radius:10px;padding:10px 16px;cursor:pointer;
+}
+.btn-primary:disabled{opacity:.6;cursor:not-allowed}
+
+.error{margin-top:8px;color:#b91c1c}
+
+.typing{display:inline-block}
+.typing span{display:inline-block;width:6px;height:6px;margin:0 2px;background:#94a3b8;border-radius:50%;animation:blink 1.2s infinite}
+.typing span:nth-child(2){animation-delay:.2s}
+.typing span:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.2}40%{opacity:1}}
+
+

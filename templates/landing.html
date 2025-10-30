@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <div class="hero-card">
+        <h2>Be heard. Feel supported.</h2>
+        <p>Sukoon AI is a calm, caring companion that listens to how you feel and responds with empathetic guidance and practical exercises — powered by safe retrieval from trusted mental-wellbeing content.</p>
+        <div style="margin-top:16px">
+            <a class="btn-primary" href="{{ url_for('chat') }}" style="text-decoration:none;display:inline-block">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<section style="margin-top:24px">
+    <div class="hero-card">
+        <h3 style="margin:0 0 12px 0">What you can expect</h3>
+        <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Gentle, short paragraphs focused on understanding and next steps</li>
+            <li>Evidence-informed suggestions: breathing, journaling, CBT-style reframes</li>
+            <li>Fast, private chat — no sign up required</li>
+            <li>Immediate crisis escalation guidance when needed</li>
+        </ul>
+    </div>
+    <div style="text-align:center;margin-top:18px">
+        <a class="btn-primary" href="{{ url_for('chat') }}" style="text-decoration:none;display:inline-block">Get Started</a>
+    </div>
+{% endblock %}
+
+

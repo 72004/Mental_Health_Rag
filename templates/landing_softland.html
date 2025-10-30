@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sukoon AI — Calm Companion</title>
+    <meta name="description" content="Sukoon AI is a calm, caring companion that supports your mental well-being.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/softland/assets/img/favicon.ico">
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="/softland/assets/css/bootstrap-5.0.0-alpha-1.min.css">
+    <link rel="stylesheet" href="/softland/assets/css/LineIcons.2.0.css">
+    <link rel="stylesheet" href="/softland/assets/css/animate.css">
+    <link rel="stylesheet" href="/softland/assets/css/main.css">
+    <style>
+        /* Compact navbar height overrides */
+        .navbar-area{padding:4px 0;}
+        .header .navbar{padding-top:6px;padding-bottom:6px;}
+        .header .navbar .navbar-brand{padding:0;margin:0;line-height:1;}
+        .header .navbar .navbar-nav .nav-link{padding-top:6px;padding-bottom:6px;}
+        /* Remove button borders */
+        .theme-btn{border:none!important;outline:none!important;}
+        .theme-btn:hover,.theme-btn:focus{border:none!important;box-shadow:none!important;}
+        /* Push specific nav item to the far right */
+        .header .navbar .navbar-nav .nav-item.ms-auto{margin-left:auto!important;}
+        /* Ensure the nav list can align to the end across template overrides */
+        .header .navbar .navbar-collapse{display:flex!important;}
+        #nav{display:flex!important;width:100%!important;justify-content:flex-end!important;margin-left:0!important;}
+        /* Icon gradient aliases for feature cards */
+        .gradient-relief{background-image:linear-gradient(#40b4f6 0%, #79cefd 100%);} /* blue */
+        .gradient-guided{background-image:linear-gradient(#b548f2 0%, #d283fd 100%);} /* purple */
+        .gradient-ai{background-image:linear-gradient(#6240c8 0%, #a145fe 100%);} /* violet */
+        .gradient-tracking{background-image:linear-gradient(#e44e83 0%, #ffb8d1 100%);} /* pink */
+    </style>
+</head>
+<body>
+    <!-- ========================= header start ========================= -->
+    <header class="header">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
+                            <nav class="navbar navbar-expand-lg" id="mainNavbar" role="navigation" aria-label="Main navigation">
+                                <a class="navbar-brand brand-text" href="/">Sukoon.Ai</a>
+                              </nav>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <!-- <li class="nav-item"><a class="page-scroll nav-link active" href="#home">Home</a></li> -->
+                                    <li class="nav-item"><a class="page-scroll nav-link" href="#features">How It Works</a></li>
+                                    <!-- <li class="nav-item"><a class="page-scroll nav-link" href="#process">How it works</a></li> -->
+                                    <!-- <li class="nav-item"><a class="page-scroll nav-link" href="#subscribe">Updates</a></li> -->
+                                </ul>
+                                <!-- <a class="theme-btn" href="{{ url_for('chat') }}" style="margin-left:16px;">Get Started</a> -->
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========================= header end ========================= -->
+
+    <!-- ========================= hero start ========================= -->
+    <section id="home" class="hero-section img-bg" style="background-image: url('/softland/assets/img/hero/hero-bg.svg')">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-6">
+                    <div class="hero-content-wrapper">
+                        <h1 class="wow fadeInDown" data-wow-delay=".4s" data-wow-duration="1.3s">Sukoon.AI - Be heard. Feel supported.</h1>
+                        <p class="wow fadeInLeft" data-wow-delay=".6s" data-wow-duration="1.3s">Sukoon AI listens with empathy and offers practical, gentle guidance backed by trusted well-being content.</p>
+                        <a href="{{ url_for('chat') }}" class="theme-btn wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1.3s">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6">
+                    <div class="hero-img">
+                        <!-- <img class="wow fadeInRight" data-wow-delay=".4s" data-wow-duration="1.3s" src="/softland/assets/img/hero/hero-img.png" alt="Preview"> -->
+                        <img src="/softland/assets/img/hero/hero-shape.svg" alt="" class="shape" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= hero end ========================= -->
+
+    <!-- You can keep additional sections from the template here if you wish. -->
+
+    <!--========================= service-section start========================= -->
+    <section id="features" class="service-section gray-bg pt-150 pb-70" aria-label="SukoonAi features">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-8 col-md-10 mx-auto">
+              <div class="section-title text-center mb-55">
+                <span class="wow fadeInDown" data-wow-delay=".2s">Core of SukoonAi</span>
+                <h2 class="mb-15 wow fadeInUp" data-wow-delay=".4s">How SukoonAi Calms You</h2>
+                <p class="wow fadeInUp" data-wow-delay=".6s">
+                  SukoonAi blends quick, evidence-informed micro-exercises with an empathetic AI companion — helping you regain calm in moments and build emotional resilience over time.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row">
+            <!-- Feature 1 -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="single-service text-center mb-30 wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1.3s">
+                <div class="service-icon icon-gradient gradient-relief mb-30" aria-hidden="true">
+                  <i class="lni lni-pulse"></i>
+                </div>
+                <h4 class="mb-15">Rapid Panic Relief</h4>
+                <p>One-minute guided micro-movements and breathing exercises that interrupt panic and lower your heart rate quickly.</p>
+              </div>
+            </div>
+      
+            <!-- Feature 2 -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="single-service text-center mb-30 wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1.3s">
+                <div class="service-icon icon-gradient gradient-guided mb-30" aria-hidden="true">
+                  <i class="lni lni-dumbbell"></i>
+                </div>
+                <h4 class="mb-15">Guided Micro-Exercises</h4>
+                <p>Short, research-backed grounding activities — movement, breathing, and mindfulness — you can do anywhere, anytime.</p>
+              </div>
+            </div>
+      
+            <!-- Feature 3 -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="single-service text-center mb-30 wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.3s">
+                <div class="service-icon icon-gradient gradient-ai mb-30" aria-hidden="true">
+                  <i class="lni lni-headphone"></i>
+                </div>
+                <h4 class="mb-15">AI Comfort Companion</h4>
+                <p>An empathetic AI chat companion that listens, validates your feelings, and offers instant calming suggestions.</p>
+              </div>
+            </div>
+      
+            <!-- Feature 4 -->
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="single-service text-center mb-30 wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1.3s">
+                <div class="service-icon icon-gradient gradient-tracking mb-30" aria-hidden="true">
+                  <i class="lni lni-bar-chart"></i>
+                </div>
+                <h4 class="mb-15">Progress & Insights</h4>
+                <p>Track your emotional patterns, triggers, and improvements over time with simple charts and personalized insights.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row mt-30">
+            <div class="col-12 text-center">
+              <a href="{{ url_for('chat') }}" class="theme-btn" aria-label="Get started with SukoonAi"><i class="lni lni-play" style="margin-right:8px"></i>Get started with SukoonAi</a>
+              <a href="#learn-more" class="theme-btn outline ms-3" aria-label="Learn more about features"><i class="lni lni-information" style="margin-right:8px"></i>Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!--========================= service-section end========================= -->
+
+    <!-- ========================= Scripts ========================= -->
+    <script>
+        window.addEventListener("scroll", function() {
+          const navbar = document.getElementById("mainNavbar");
+          const brandText = document.getElementById("brandText");
+      
+          // Adjust this value to when your navbar changes color
+          if (window.scrollY > 50) {
+            // When scrolled down — navbar turns white, so make text black
+            brandText.style.color = "#000";
+          } else {
+            // When at top — navbar is dark, so make text white
+            brandText.style.color = "#fff";
+          }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/softland/assets/js/wow.min.js"></script>
+    <script src="/softland/assets/js/main.js"></script>
+    <script>
+        if (typeof WOW === 'function') { new WOW().init(); }
+    </script>
+</body>
+</html>
+
+
